@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink-950 text-slate-100 antialiased font-sans;
+}
+
+body.light {
+  color-scheme: light;
+  @apply bg-slate-50 text-slate-900;
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10;
+}
+
+body.light .glass {
+  @apply bg-white/70 border-slate-200/80;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-accent-cyan via-accent-violet to-accent-rose bg-clip-text text-transparent;
+}
