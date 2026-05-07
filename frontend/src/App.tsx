@@ -13,9 +13,11 @@ export default function App() {
       <AuthProvider>
         <BrowserRouter>
           <Routes>
+            <Route path="/admin/login/" element={<AdminLoginPage />} />
             <Route path="/" element={<PortfolioPage />} />
             <Route path="/admin/login" element={<AdminLoginPage />} />
             <Route path="/admin" element={<AdminDashboardPage />} />
+            <Route path="/admin/" element={<AdminDashboardPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
           <Toaster position="top-center" toastOptions={{ className: "bg-ink-900 text-white border border-white/10" }} />
