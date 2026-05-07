@@ -10,11 +10,12 @@ const fade = {
 
 const highlightChips = [
   "Agentic AI",
+  "Machine Learning",
   "Data Observability",
+  "RAG",
   "ETL Pipelines",
-  "LLM Applications",
-  "Cloud Data Platforms",
-  "Production APIs",
+  "MLOps",
+  "Cloud Platformas(AWS, Azure)",
 ];
 
 function formatBio(bio: string) {
@@ -54,7 +55,7 @@ export function About({ profile, education }: { profile: Profile | null; educati
           >
             <div className="pointer-events-none absolute -right-20 -top-20 h-44 w-44 rounded-full bg-accent-cyan/20 blur-3xl" />
             <p className="max-w-3xl text-3xl font-semibold leading-tight text-white light:text-slate-900 md:text-4xl">
-              Turning messy data into trusted systems with observability and intelligent automation.
+              Creating production-ready AI solutions across backend engineering, machine learning, and cloud platforms
             </p>
 
             <div className="mt-6 space-y-4 text-[1.03rem] leading-relaxed text-slate-300 light:text-slate-700">

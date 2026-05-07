@@ -27,8 +27,8 @@ def ensure_seed(db: Session) -> None:
 
     profile = Profile(
         name="Sivananda Panda",
-        title="Data & AI Engineer",
-        tagline="Building reliable data platforms, observability, and Agentic AI solutions.",
+        title="Fullstack AI/ML Engineer",
+        tagline="Full-Stack Engineer focused on Agentic AI, intelligent automation, and scalable ML systems.",
         bio=(
             "Associate at PwC focused on multi-cloud data observability, data quality, and "
             "Agentic AI applications. Former ML research intern at Samsung Prism with strong "
@@ -37,9 +37,9 @@ def ensure_seed(db: Session) -> None:
         location="Bhubaneswar, India",
         phone="+91 9776507009",
         email="",
-        linkedin="https://linkedin.com/in/",
-        github="https://github.com/",
-        resume_url="",
+        linkedin="https://www.linkedin.com/in/sivananda-panda-56a121169/",
+        github="https://github.com/siva-rgb",
+        resume_url="https://drive.google.com/file/d/1iG_zci1OG2ygcWh-xqRQdNjPqfJkmHWo/view?usp=sharing",
         photo_url="",
     )
     db.add(profile)
@@ -65,10 +65,11 @@ def ensure_seed(db: Session) -> None:
             is_current=True,
             sort_order=0,
             bullets=[
-                "Architected and deployed comprehensive multi-cloud Data Observability and Data Quality systems across both GCP and Azure platforms, ensuring consistent monitoring and reliability for critical internal and client projects.",
+                "The IAM audit team was spending significant manual effort generating audit reports and handling repetitive ServiceNow triage tasks, Developed a Cyber IAM Audit Agent and an L2 Copilot Triage Assistant to automate audit report generation and ServiceNow ticket triage. The AI agents parse natural language to formulate step-by-step multi-platformretrieval plans, automatically package evidence, map tickets to known patterns, and propose Knowledge Base(KB) updates, collectively saving the IAM team 280+ hours per month.",
                 "Developed a novel Data Quality application leveraging Agentic AI to proactively identify complex data anomalies and quality issues, resulting in faster incident detection and resolution.",
-                "Engineered and maintained high-throughput backend ETL data pipelines crucial for automated data transformation, loading, and continuous system monitoring processes.",
-                "Built and delivered several end-to-end Agentic AI applications that streamlined high-value business tasks, including automated Report Analysis, Idea Evaluation, and quantitative ROI Assessment.",
+                "Cyber SecOps analysts faced delays during alert investigations due to fragmented log retrieval and dependency on manual knowledge lookup processes.uild an AI-powered investigation workflow that could accelerate triage and improve analyst productivity.Architected and Developed Agentic AI applications integrated with Splunk using a custom MCP server for intelligent log retrieval. Implemented a RAG-based reasoning system grounded on internal cyber policies, SOPs, and operational playbooks.Reduced average alert triage time by nearly 80%, improving investigation speed and operational responsiveness.",
+                "Enterprise knowledge sources such as KB articles, SOPs, and runbooks were distributed across systems, making retrieval and utilization inefficient for AI applications.Build a scalable and automated knowledge ingestion pipeline for enterprise AI systems.Designed and implemented a scalable RAG pipeline using Databricks and Azure Data Factory to automate ingestion, transformation, and indexing of enterprise knowledge repositories.Designed and implemented a scalable RAG pipeline using Databricks and Azure Data Factory to automate ingestion, transformation, and indexing of enterprise knowledge repositories.Enabled reliable enterprise-scale AI retrieval workflows and significantly improved response accuracy for AI copilots and agents.",
+                "Traditional rule-based data quality checks were insufficient for identifying complex anomalies and hidden inconsistencies in enterprise datasets.Develop a smarter AI-driven data quality solution capable of proactive anomaly detection.Built an Agentic AI-powered Data Quality platform leveraging intelligent reasoning workflows and anomaly detection techniques to identify complex data issues automatically. Enabled and created data observability pltform using python and cloud API. Improved incident detection speed, reduced manual debugging effort, and enhanced overall data governance efficiency."
             ],
         )
     )
